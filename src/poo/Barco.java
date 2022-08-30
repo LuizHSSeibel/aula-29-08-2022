@@ -15,6 +15,13 @@ public class Barco {
     String cor;
     int tripulacao;
     
+    void ImprimeDadosDoBarco(){
+        System.out.println("----------Barco----------");
+        System.out.println("Tamanho: " + tamanho);
+        System.out.println("Tipo do barco: " + tipoDoBarco);
+        System.out.println("Cor: " + cor);
+        System.out.println("Tripulação: " + tripulacao);
+    }
     public String gettamanho(){
         return tamanho;
     }
@@ -45,6 +52,10 @@ public class Barco {
     
     public void settripulacao(int tripulacao){
         this.tripulacao=tripulacao;
+    }
+
+    void settripulacao(String _anões) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
 }

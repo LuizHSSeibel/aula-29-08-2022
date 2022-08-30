@@ -22,11 +22,7 @@ public class POO {
         meuCarro.setPlaca("ASDA-1232");
         meuCarro.setTipo("Gol");
         
-        System.out.println("----------CARRO----------");
-        System.out.println("Cor: "+meuCarro.getCor());
-        System.out.println("N° Portas: "+meuCarro.getnumPortas());
-        System.out.println("Placa: "+meuCarro.getPlaca());
-        System.out.println("Tipo: "+meuCarro.getTipo());        
+        meuCarro.ImprimeDadosDoCarro();
         
         Pessoa aPessoa = new Pessoa();
         
@@ -35,10 +31,15 @@ public class POO {
         aPessoa.setcorDoCabelo("Preto");
         aPessoa.setidade(45);
         
-        System.out.println("----------Pessoa----------");
-        System.out.println("Nome: "+aPessoa.getNome());
-        System.out.println("Bio Tipo: "+aPessoa.getbioTipo());
-        System.out.println("Cor do Cabelo: "+aPessoa.getcorDoCabelo());
-        System.out.println("Idade: "+aPessoa.getidade());
+        aPessoa.ImprimeDadosDaPessoa();
+        
+        Barco oBarco = new Barco();
+        
+        oBarco.settamanho("Lata de Leite Ninho");
+        oBarco.settipoDoBarco("Miniatura");
+        oBarco.setcor("Amarelo");
+        oBarco.settripulacao("2 anões");
+        
+        oBarco.ImprimeDadosDoBarco();
     }
 }
